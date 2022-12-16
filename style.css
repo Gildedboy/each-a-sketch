@@ -2,6 +2,43 @@
   margin: 0;
   padding: 0;
 }
-.test {
-  border: 1px solid red;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  padding: 30px;
+}
+
+.row,
+.insideRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square,
+.insideSquare {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+}
+.insideSquare {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.insideSquare:hover {
+  background-color: black;
+}
+
+.colored {
+  background-color: black;
 }
