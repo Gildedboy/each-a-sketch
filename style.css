@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: gray;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -12,33 +15,24 @@
   padding: 30px;
 }
 
-.row,
-.insideRow {
+.row {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.square,
-.insideSquare {
+.square {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-}
-
-.square {
   width: 50px;
   height: 50px;
-}
-.insideSquare {
-  width: 1.5em;
-  height: 1.5em;
+  background-color: white;
 }
 
-.insideSquare:hover {
+.square:hover {
   background-color: black;
 }
 
-.colored {
+.color {
   background-color: black;
 }
