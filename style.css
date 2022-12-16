@@ -29,10 +29,6 @@ body {
   background-color: white;
 }
 
-.square:hover {
-  background-color: black;
-}
-
 .color {
   background-color: black;
 }

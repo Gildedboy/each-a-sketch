@@ -14,7 +14,7 @@ for (let i = 1; i <= 16; i++) {
 
 const pen = document.querySelectorAll(".square");
 pen.forEach((div) => {
-  div.addEventListener("click", function () {
+  div.addEventListener("mousedown", function () {
     div.classList.toggle("color");
   });
 });
