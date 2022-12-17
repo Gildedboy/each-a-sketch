@@ -41,7 +41,6 @@ function changeSize() {
     );
     sizeNumber = parseInt(size);
   }
-
   removeGrid();
   newGrid(sizeNumber);
 }
@@ -51,6 +50,7 @@ function draw() {
   const pen = document.querySelectorAll(".square");
   pen.forEach((div) => {
     div.addEventListener("mouseover", () => {
+      div.setAttribute("style", `background-color:none`);
       div.classList.add("color");
     });
   });
@@ -62,6 +62,7 @@ function eraser() {
   pen.forEach((div) => {
     div.addEventListener("mouseover", () => {
       div.classList.remove("color");
+      div.setAttribute("style", `background-color:none`);
     });
   });
 }
@@ -71,6 +72,18 @@ function reset() {
   const pen = document.querySelectorAll(".square");
   pen.forEach((div) => {
     div.classList.remove("color");
+    div.setAttribute("style", `background-color:none`);
+  });
+}
+
+//function for rgb
+function rgb() {
+  const pen = document.querySelectorAll(".square");
+  pen.forEach((div) => {
+    div.addEventListener("mouseover", () => {
+      let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+      div.setAttribute("style", `background-color:#${randomColor}`);
+    });
   });
 }
 
