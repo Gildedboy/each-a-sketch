@@ -72,8 +72,6 @@ function reset() {
   pen.forEach((div) => {
     div.classList.remove("color");
   });
-  removeGrid();
-  newGrid(16);
 }
 
 //default grid
