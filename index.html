@@ -9,6 +9,15 @@
   <body>
     <div class="container">
       <h1>A SIMPLE EACH A SKETCH</h1>
+      <div class="buttons">
+        <button id="draw" onclick="draw()">DRAW</button>
+        <button id="eraser" onclick="eraser()">ERASER</button>
+        <button id="eraser" onclick="reset(); eraser()">
+          RESET TO DEFAULT VALUES
+        </button>
+        <button id="size" onclick="changeSize()">CHANGE SIZE</button>
+      </div>
+      <div class="canvas"></div>
     </div>
   </body>
 </html>
